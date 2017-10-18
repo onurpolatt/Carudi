@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/imgCarudi"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:src="@drawable/carudi"
+                android:layout_centerHorizontal="true"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtlayoutMail"
+                android:transitionGroup="true"
+                android:layout_below="@+id/imgCarudi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/signEmail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/email_drawable_selector"
+                    android:hint="E-Mail"
+                    android:inputType="textEmailAddress"
+                    android:drawablePadding="10dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtlayoutPassword"
+                android:layout_below="@+id/txtlayoutMail"
+                android:transitionGroup="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/signPassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawableLeft="@drawable/password_drawable_selector"
+                    android:hint="Şifre"
+                    android:inputType="textPassword"
+                    android:drawablePadding="10dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_below="@+id/txtlayoutPassword"
+                android:id="@+id/txtlayoutName"
+                android:transitionGroup="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/signName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawableLeft="@drawable/user_drawable_selector"
+                    android:hint="Ad Soyad"
+                    android:drawablePadding="10dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/signButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="22dp"
+                android:layout_below="@+id/txtlayoutName"
+                android:background="@drawable/button_shape"
+                android:text="Kayıt ol"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/txtLoginLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/signButton"
+                android:clickable="true"
+                android:layout_centerInParent="true"
+                android:paddingTop="5dp"/>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

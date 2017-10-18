@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/imgCarudi"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:src="@drawable/carudi"
+                android:layout_centerHorizontal="true"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtlayoutMail"
+                android:layout_below="@+id/imgCarudi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/loginEmail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/email_drawable_selector"
+                    android:hint="E-Mail"
+                    android:inputType="textEmailAddress"
+                    android:drawablePadding="10dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtlayoutPassword"
+                android:layout_below="@+id/txtlayoutMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/loginPassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawableLeft="@drawable/password_drawable_selector"
+                    android:hint="Şifre"
+                    android:drawablePadding="10dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txtForgetPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/txtlayoutPassword"
+                android:layout_alignParentRight="true"
+                android:paddingTop="5dp"
+                android:textColor="@color/secondary_text"
+                android:text="Şifrenizi mi unuttunuz?" />
+
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="22dp"
+                android:layout_below="@+id/txtForgetPass"
+                android:background="@drawable/button_shape"
+                android:text="Giriş"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/txtSignupLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/loginButton"
+                android:clickable="true"
+                android:layout_centerInParent="true"
+                android:paddingTop="5dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

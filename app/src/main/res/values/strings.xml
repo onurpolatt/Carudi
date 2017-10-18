@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Carudi</string>
+    <string name="login_link"><![CDATA[ <b><font color=#757575>Zaten bir hesabın var mı?</b><b><font color=#3F51B5> Giriş yap</b>]]></string>
+    <string name="signup_link"><![CDATA[ <b><font color=#757575>Hesabın yok mu?</b><b><font color=#3F51B5> Kayıt ol</b>]]></string>
+</resources>

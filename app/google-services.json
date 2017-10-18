@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "287447807075",
+    "firebase_url": "https://carudi-eab23.firebaseio.com",
+    "project_id": "carudi-eab23",
+    "storage_bucket": "carudi-eab23.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:287447807075:android:3cba9cc8f6dc77e3",
+        "android_client_info": {
+          "package_name": "com.example.onurp.carudi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "287447807075-4mt95uqblj40gh6bt7rtgad9adi3q5i8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQchuTRGaOeO0K9f_JJpcP-71PUrKMp-4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
